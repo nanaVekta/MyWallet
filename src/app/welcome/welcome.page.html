@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>welcome</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <img src="../../assets/welcome.jpg">
 
+  <div class="ion-padding">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password"></ion-input>
+        <ion-icon name="eye-outline" class="item-right"></ion-icon>
+      </ion-item>
+    </ion-list>
+  
+    <a href="#">Forgot Password?</a>
+    <ion-button expand="block" (click)="onClick()">SIGN IN</ion-button>
+  </div>
 </ion-content>

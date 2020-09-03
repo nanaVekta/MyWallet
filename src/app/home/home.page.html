@@ -1,20 +1,158 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding" [fullscreen]="true">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-list lines="none" style="margin-top: 20px">
+        <ion-item>
+            <img src="../../assets/icon/icon.png" width="100">
+            <ion-icon name="notifications-outline" slot="end"></ion-icon>
+
+        </ion-item>
+    </ion-list>
+
+    <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+            <div class="visa">
+                <ion-list lines="none">
+                    <ion-item>
+                        <p>&bull;&bull;&bull;&bull; 5590</p>
+                        <ion-avatar slot="end">
+                            <img src="../../assets/avatar.jpg">
+                        </ion-avatar>
+                    </ion-item>
+
+                    <ion-item style="margin: 20px 0;">
+                        <ion-icon name="radio-outline" slot="end"></ion-icon>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>
+                            <small>Balance</small>
+                            <h1><b>GH&cent; 5,678.98</b></h1>
+                        </ion-label>
+                        <ion-thumbnail slot="end">
+                            <img src="../../assets/visa.png">
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="mastercard">
+                <ion-list lines="none">
+                    <ion-item>
+                        <p>&bull;&bull;&bull;&bull; 6687</p>
+                        <ion-avatar slot="end">
+                            <img src="../../assets/avatar.jpg">
+                        </ion-avatar>
+                    </ion-item>
+
+                    <ion-item style="margin: 20px 0;">
+                        <ion-icon name="radio-outline" slot="end"></ion-icon>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>
+                            <small>Balance</small>
+                            <h1><b>GH&cent; 1,785.97</b></h1>
+                        </ion-label>
+                        <ion-thumbnail slot="end">
+                            <img src="../../assets/mastercard.png">
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </ion-slide>
+    </ion-slides>
+
+    <div class="ion-padding" style="margin: 50px 15px 0 15px;">
+        <h5>Recent Transactions</h5>
+
+        <ion-fab vertical="bottom" horizontal="end">
+            <ion-fab-button color="dark">
+                <ion-icon name="options-outline"></ion-icon>
+            </ion-fab-button>
+
+            <ion-fab-list side="start">
+               
+                <ion-fab-button color="light">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </ion-fab-button>
+
+                <ion-fab-button color="light">
+                    <ion-icon name="person-outline"></ion-icon>
+                </ion-fab-button>
+
+                <ion-fab-button color="dark">
+                    <ion-icon name="home-outline"></ion-icon>
+                </ion-fab-button>  
+            </ion-fab-list>
+        </ion-fab>
+    </div>
+
+    <ion-list>
+        <ion-item-sliding>
+            <ion-item>
+                <span class="icon">
+                    <ion-icon name="receipt-outline"></ion-icon>
+                </span>
+    
+                <ion-label>
+                    <ion-text>Movie Tickets</ion-text>
+                    <p>12 Aug, 1:00 PM</p>
+                </ion-label>
+    
+                <h6 slot="end"><b>GH&cent; 80.00</b></h6>
+            </ion-item>
+            <ion-item-options side="end">
+                <ion-item-option color="danger" expandable>
+                    <ion-icon name="trash-outline"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+            <ion-item>
+                <span class="icon">
+                    <ion-icon name="pulse-outline"></ion-icon>
+                </span>
+    
+                <ion-label>
+                    <ion-text>Pharmacy</ion-text>
+                    <p>11 Aug, 10:00 AM</p>
+                </ion-label>
+    
+                <h6 slot="end"><b>GH&cent; 160.66</b></h6>
+            </ion-item>
+    
+            <ion-item-options side="end">
+                <ion-item-option color="danger" expandable>
+                    <ion-icon name="trash-outline"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+            <ion-item>
+                <span class="icon">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </span>
+    
+                <ion-label>
+                    <ion-text>Supermarket</ion-text>
+                    <p>10 Aug, 4:50 PM</p>
+                </ion-label>
+    
+                <h6 slot="end"><b>GH&cent; 230.00</b></h6>
+            </ion-item>
+    
+            <ion-item-options side="end">
+                <ion-item-option color="danger" expandable>
+                    <ion-icon name="trash-outline"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    
+    </ion-list>
+  
 </ion-content>
